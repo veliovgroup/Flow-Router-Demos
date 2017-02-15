@@ -99,5 +99,7 @@ FlowRouter.route '/post',
     keywords: post?.keywords
     description: post?.description
 
+`import { FlowRouterMeta, FlowRouterTitle } from 'meteor/ostrio:flow-router-meta'`
+
 new FlowRouterMeta FlowRouter
 new FlowRouterTitle FlowRouter

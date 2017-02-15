@@ -12,6 +12,8 @@ template(name='_layout')
         li: a(href="{{pathFor 'index'}}") Index
         li: a(href="{{pathFor 'secondPage'}}") Second Page (TWBS 2 CSS and JS)
         li: a(href="{{pathFor 'thirdPage' something=rand}}") Third Page with parameter "<b>{{rand}}</b>"
+        li: a(href="{{pathFor 'thirdPage' something='そししきききちち'}}") Third Page unicode parameter "<b>そししきききちち</b>"
+        li: a(href="{{pathFor 'thirdPage' something=',./ =-?@'}}") Third Page characters parameter "<b>,./ =-?@</b>"
         li: a(href="{{pathFor 'groupPage1'}}") Group page (TWBS 4-alpha)
         li: a(href="{{pathFor 'groupPage2'}}") Group page 2 (TWBS 4-alpha)
         li: a(href="{{pathFor 'post'}}") Demo post, with data from Mongo
@@ -64,7 +66,7 @@ template(name='_layout')
       a(href='https://atmospherejs.com/ostrio/flow-router-meta') on Atmosphere
       | .
     h6
-      | 2016. By 
+      | 2017. By 
       a(href='https://veliovgroup.com') Veliov Group, LLC
 
 template(name='index')
