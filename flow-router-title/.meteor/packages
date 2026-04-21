@@ -19,8 +19,7 @@ reactive-var@1.0.13
 templating
 twbs:bootstrap
 mquandalle:jade
-coffeescript
-coffeescript-compiler
+typescript
 mongo
 ostrio:flow-router-extra
 ostrio:flow-router-title
