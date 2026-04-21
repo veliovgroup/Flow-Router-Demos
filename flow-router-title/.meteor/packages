@@ -11,12 +11,17 @@ jquery                        # Helpful client-side library
 tracker@1.3.4                       # Meteor's client-side reactive programming library
 
 ecmascript@0.17.0                    # Enable ECMAScript2015+ syntax in app code
+ecmascript-runtime
+meteor
 
 random@1.2.2
 reactive-var@1.0.13
 templating
 twbs:bootstrap
 mquandalle:jade
+coffeescript
+coffeescript-compiler
+mongo
 ostrio:flow-router-extra
 ostrio:flow-router-title
 ostrio:templatehelpers
@@ -27,4 +32,3 @@ standard-minifier-css@1.10.0
 standard-minifier-js@3.2.0
 shell-server@0.7.0
 dynamic-import
-underscore
