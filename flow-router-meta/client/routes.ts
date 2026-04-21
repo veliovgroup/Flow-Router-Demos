@@ -36,7 +36,8 @@ FlowRouter.globals.push({
   },
 });
 
-FlowRouter.notFound = {
+FlowRouter.route('*', {
+  name: 'notFound',
   action(this: { render: (...args: unknown[]) => void }) {
     this.render('_layout', '_404', { rand: Random.id() });
   },
@@ -45,7 +46,7 @@ FlowRouter.notFound = {
     robots: 'noindex, nofollow',
     description: 'Non-existent route',
   },
-};
+});
 
 FlowRouter.route('/', {
   name: 'index',

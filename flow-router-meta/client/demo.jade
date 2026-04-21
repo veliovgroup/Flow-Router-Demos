@@ -274,7 +274,8 @@ template(name='_404')
   +markdown
     ##### Code:
     ```javascript
-    FlowRouter.notFound = {
+    FlowRouter.route('*', {
+      name: 'notFound',
       action: function() {
         this.render('_layout', '_404', {
           rand: Random.id()
@@ -285,5 +286,5 @@ template(name='_404')
         robots: 'noindex, nofollow',
         description: "Non-existent route"
       }
-    };
+    });
     ```
