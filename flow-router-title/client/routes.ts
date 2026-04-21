@@ -10,12 +10,13 @@ const sm = new SubsManager();
 
 FlowRouter.globals.push({ title: 'Default title' });
 
-FlowRouter.notFound = {
+FlowRouter.route('*', {
+  name: 'notFound',
   action(this: { render: (...args: unknown[]) => void }) {
     this.render('_layout', '_404', { rand: Random.id() });
   },
   title: '404: Page not found',
-};
+});
 
 FlowRouter.route('/', {
   name: 'index',
