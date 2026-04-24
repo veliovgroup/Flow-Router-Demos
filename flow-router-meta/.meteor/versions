@@ -55,9 +55,9 @@ mquandalle:jade@0.4.1
 npm-mongo@6.16.1
 observe-sequence@2.0.0
 ordered-dict@1.2.0
-ostrio:flow-router-extra@3.13.0
-ostrio:flow-router-meta@2.4.0
-ostrio:flow-router-title@3.5.0
+ostrio:flow-router-extra@3.13.1
+ostrio:flow-router-meta@2.4.2
+ostrio:flow-router-title@3.5.1
 promise@1.0.0
 random@1.2.2
 react-fast-refresh@0.3.0
